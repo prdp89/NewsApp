@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorSilver"
+        tools:context=".ui.main.MainFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <TextView
+                    android:id="@+id/tv_feed_title"
+                    style="@style/TextStyle.Title.Roboto.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/txt_title"
+                    android:textAllCaps="true" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmer_view_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_4_dp"
+                    android:layout_gravity="center"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <include layout="@layout/item_news_shimmer" />
+
+                        <include layout="@layout/item_news_shimmer" />
+
+                        <include layout="@layout/item_news_shimmer" />
+
+                        <include layout="@layout/item_news_shimmer" />
+
+                        <include layout="@layout/item_news_shimmer" />
+
+                        <include layout="@layout/item_news_shimmer" />
+                    </LinearLayout>
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                    android:id="@+id/swipe_refresh_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_4_dp"
+                    android:layout_marginRight="@dimen/dimen_4_dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_news_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="visible"
+                        app:layoutManager="LinearLayoutManager"
+                        tools:listitem="@layout/item_news_feed" />
+
+                </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+                <TextView
+                    android:id="@+id/tv_empty"
+                    style="@style/TextStyle.Title.Roboto.Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dimen_16_dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="@string/it_s_empty_here"
+                    android:textSize="22sp"
+                    android:visibility="gone"
+                    tools:ignore="RtlSymmetry"
+                    tools:text="@string/it_s_empty_here" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

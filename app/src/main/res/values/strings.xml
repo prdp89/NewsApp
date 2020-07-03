@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+
+    <string name="app_base_url" translatable="false">https://newsapi.org/</string>
+    <string name="txt_title">News App</string>
+    <string name="txt_alien">Please check, if An Alien is blocking your signal.</string>
+    <string name="it_s_empty_here">It\'s empty here :(</string>
+    <string name="txt_loading">Loading..</string>
+
+    <string name="transition_avatar">photo %d</string>
+    <string name="fail_news_url">Failed to load news details. Please try again later.</string>
+
+</resources>

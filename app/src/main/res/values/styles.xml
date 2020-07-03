@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppTheme.Launcher">
+        <item name="android:windowBackground">@drawable/layer_background</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents">
+        <item name="android:fontFamily">@font/googlesans_regular</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Base Fonts  -->
+    <style name="TextAppearance.Text.GoogleSans.Regular" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/googlesans_regular</item>
+    </style>
+
+
+    <style name="TextAppearance.Text.Roboto.Regular" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="TextAppearance.Text.Roboto.Medium" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <!-- Ends Here    -->
+
+    <!-- Text Styles    -->
+
+    <style name="TextStyle">
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:textColor">@color/colorLightBlack</item>
+    </style>
+
+    <style name="TextStyle.Title.Roboto.Regular" parent="TextStyle">
+        <item name="android:textAppearance">@style/TextAppearance.Text.Roboto.Regular</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextStyle.Title.Roboto.Medium" parent="TextStyle">
+        <item name="android:textAppearance">@style/TextAppearance.Text.Roboto.Medium</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TextStyle.Title.Roboto.Title" parent="TextStyle">
+        <item name="android:textAppearance">@style/TextAppearance.Text.Roboto.Medium</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <style name="TextStyle.Title.GoogleSans.Regular" parent="TextStyle">
+        <item name="android:textAppearance">@style/TextAppearance.Text.GoogleSans.Regular</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ToolbarTitleTextAppearance" parent="TextAppearance.Design.CollapsingToolbar.Expanded">
+        <item name="android:textColor">@android:color/transparent</item>
+    </style>
+
+    <!-- Ends Here    -->
+
+</resources>

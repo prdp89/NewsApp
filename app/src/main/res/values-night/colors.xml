@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#002022</color>
+    <color name="colorPrimaryDark">#006064</color>
+    <color name="colorAccent">#f8f99f</color>
+
+    <color name="colorSilver">#002022</color>
+    <color name="colorLightBlack">@android:color/white</color>
+    <color name="colorDenseBlack">@android:color/white</color>
+
+    <color name="bulbColor">@android:color/white</color>
+</resources>
